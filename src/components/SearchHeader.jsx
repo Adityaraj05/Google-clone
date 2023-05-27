@@ -4,27 +4,28 @@ import SearchBox from "./SearchBox";
 import { RiSettings3Line } from "react-icons/ri";
 import { TbGridDots } from "react-icons/tb";
 import SearchHeaderOptions from "./SearchHeaderOptions";
-import Avatar from './Avatar';
 
 export default function SearchHeader() {
   return (
-    <header className="sticky top-100 bg-white">
-      <div className="flex w-full p-6 items-center justify-between space-x-4">
+    <header className="sticky top-0 bg-white">
+      <div className="flex w-full p-6 items-center justify-between">
         <Link href={"/"}>
           <Image
-            width="150"
-            height="50"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Google_2011_logo.png/640px-Google_2011_logo.png"
+            width="120"
+            height="40"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png"
           />
         </Link>
         <div className="flex-1">
           <SearchBox />
         </div>
-        <div className="hidden md:inline-flex space-x-4 ">
-          <RiSettings3Line className="header-icon  space-x-4 " />
-          <TbGridDots className="header-icon bg-transparent hover:bg-gray-300 rounded-full text-4xl p-2" />
+        <div className="hidden md:inline-flex space-x-2 ">
+          <RiSettings3Line className="header-icon" />
+          <TbGridDots className="header-icon" />
         </div>
-        <Avatar className="ml-auto " url="https://yt3.ggpht.com/M9SMtoHULi1LF3DvkJ6PeVInfEwWyhjBU6Drf-Z9kmqRc6SWoYfY4rOhe2n9SQ26qPTn3u_odqI=s88-c-k-c0x00ffffff-no-rj-mo" />
+        <button className="bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-all ml-2">
+          Sign in
+        </button>
       </div>
       <SearchHeaderOptions />
     </header>

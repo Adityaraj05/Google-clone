@@ -12,6 +12,7 @@ export default function Footer() {
           <li className="link">Advertising</li>
           <li className="link">Business</li>
         
+          
         </ul>
 
         <ul className="flex items-center space-x-6">
